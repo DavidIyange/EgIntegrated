@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise Cybersecurity Solutions | EG Integrated Services Ltd</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: #f1f5f9;
+    }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 50px -10px rgba(56, 189, 248, 0.25);
+    }
+    .glow-purple {
+      box-shadow: 0 0 50px -10px rgba(168, 85, 247, 0.25);
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+    .gradient-text-cyan {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-text-purple {
+      background: linear-gradient(135deg, #c084fc 0%, #f472b6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-grid antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+  <!-- TOP PROMO / TRUST BAR -->
+  <div class="bg-slate-900/90 border-b border-slate-800 text-xs py-2 text-center text-slate-400">
+    <span>Authorized Deployment Partner & Solution Specialist — <strong>EG Integrated Services Ltd</strong></span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-cyan-500/20">
+            EG
+          </div>
+          <div>
+            <div class="font-extrabold tracking-tight text-white text-lg">EG INTEGRATED <span class="text-cyan-400">SERVICES</span></div>
+            <div class="text-[10px] tracking-widest text-slate-400 uppercase font-mono">Enterprise Security Solutions</div>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+          <a href="#solutions" class="hover:text-cyan-400 transition-colors">Featured Solutions</a>
+          <a href="#comparison" class="hover:text-cyan-400 transition-colors">Compare Products</a>
+          <a href="#services" class="hover:text-cyan-400 transition-colors">EG Deployment Services</a>
+        </div>
+
+        <!-- CTAs -->
+        <div class="flex items-center gap-4">
+          <button onclick="openModal('quote')" class="hidden sm:inline-flex items-center px-4 py-2.5 rounded-lg border border-slate-700 bg-slate-900 text-slate-200 text-sm font-semibold hover:bg-slate-800 transition-all">
+            Get Pricing Quote
+          </button>
+          <button onclick="openModal('call')" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold text-sm hover:brightness-110 shadow-lg shadow-cyan-500/20 transition-all">
+            Book Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="relative pt-16 pb-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-xs text-slate-300 font-mono mb-6">
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        EG Integrated Services Ltd · Enterprise Cyber Portfolio
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-4xl mx-auto">
+        Next-Generation Threat Visibility & <span class="gradient-text-cyan">Granular Compliance Auditing</span>
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+        Whether you require cloud-native threat detection and SOAR response, or deep on-premises Active Directory change auditing—EG Integrated Services Ltd delivers market-leading platforms tailored to your infrastructure.
+      </p>
+
+      <!-- HERO BUTTONS -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <a href="#solutions" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-extrabold text-base hover:brightness-110 shadow-xl shadow-cyan-500/20 transition-all flex items-center justify-center gap-2">
+          Explore Our Solutions
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <button onclick="openModal('call')" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-700 text-white font-bold text-base hover:bg-slate-800 transition-all">
+          Speak With A Security Specialist
+        </button>
+      </div>
+
+      <!-- PRODUCT CARDS HEADLINE PREVIEW -->
+      <div class="grid md:grid-cols-2 gap-8 text-left max-w-5xl mx-auto">
+        
+        <!-- Microsoft Sentinel Card Header -->
+        <div class="glass-card p-6 rounded-2xl border-t-4 border-t-cyan-500 relative">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono px-3 py-1 rounded bg-cyan-950 text-cyan-400 border border-cyan-800 font-semibold">CLOUD SIEM & SOAR</span>
+            <span class="text-xs text-slate-400">Microsoft Ecosystem</span>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-2">Microsoft Sentinel</h2>
+          <p class="text-slate-400 text-sm mb-4">Scalable, cloud-native Security Information and Event Management (SIEM) with automated AI threat hunting.</p>
+          <a href="#sentinel" class="text-cyan-400 text-sm font-semibold hover:underline inline-flex items-center gap-1">Read Full Features →</a>
+        </div>
+
+        <!-- Netwrix Auditor Card Header -->
+        <div class="glass-card p-6 rounded-2xl border-t-4 border-t-purple-500 relative">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono px-3 py-1 rounded bg-purple-950 text-purple-400 border border-purple-800 font-semibold">DATA & AD AUDITING</span>
+            <span class="text-xs text-slate-400">Hybrid & On-Premises</span>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-2">Netwrix Auditor</h2>
+          <p class="text-slate-400 text-sm mb-4">Granular visibility into configuration changes, Active Directory access, and compliance auditing.</p>
+          <a href="#netwrix" class="text-purple-400 text-sm font-semibold hover:underline inline-flex items-center gap-1">Read Full Features →</a>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- PRODUCT SHOWCASE SECTION -->
+  <section id="solutions" class="py-20 bg-slate-950 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Two Industry Leaders. Seamless Deployment.</h2>
+        <p class="text-slate-400">EG Integrated Services Ltd provides licensing, architectural setup, custom configuration, and 24/7 support for both platforms.</p>
+      </div>
+
+      <!-- PRODUCT 1: SENTINEL -->
+      <div id="sentinel" class="grid lg:grid-cols-2 gap-12 items-center mb-24 glass-card p-8 sm:p-12 rounded-3xl border border-slate-800 glow-cyan">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950 border border-cyan-700/50 text-cyan-400 text-xs font-mono font-semibold mb-4">
+            MICROSOFT SENTINEL
+          </div>
+          <h3 class="text-3xl font-bold text-white mb-4">Cloud-Native Intelligence & Automated Response</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Microsoft Sentinel delivers intelligent security analytics across your entire enterprise. Aggregate data from user devices, applications, servers, and multi-cloud environments in seconds.
+          </p>
+
+          <ul class="space-y-3 mb-8 text-sm text-slate-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>AI-Powered Threat Detection:</strong> Leverages Microsoft Machine Learning to spot anomalies fast.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Automated SOAR Playbooks:</strong> Instantly isolate compromised hosts and block malicious identities.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Native M363 & Azure Integration:</strong> Out-of-the-box data connectors for Microsoft security tools.</span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-4">
+            <button onclick="openModal('sentinel_quote')" class="px-6 py-3 rounded-lg bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-all">
+              Request Sentinel Pricing
+            </button>
+            <button onclick="openModal('sentinel_demo')" class="px-6 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white font-semibold text-sm hover:bg-slate-800 transition-all">
+              Schedule Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 font-mono text-xs text-slate-300">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4 text-slate-400">
+            <span>// Sentinel Real-Time Alert Stream</span>
+            <span class="text-cyan-400">LIVE MONITORING</span>
+          </div>
+          <div class="space-y-3">
+            <div class="p-3 rounded bg-slate-950 border border-cyan-900/40">
+              <span class="text-cyan-400">[INCIDENT #9402]</span> High Severity<br>
+              <span class="text-slate-400">Type:</span> Impossible Travel Detected<br>
+              <span class="text-slate-400">User:</span> executive_user@domain.com<br>
+              <span class="text-emerald-400">Status: Automated Playbook Isolated Device</span>
+            </div>
+            <div class="p-3 rounded bg-slate-950 border border-slate-800">
+              <span class="text-yellow-400">[INCIDENT #9401]</span> Medium Severity<br>
+              <span class="text-slate-400">Type:</span> Anomaly Logins from New IP<br>
+              <span class="text-slate-400">Source:</span> Azure AD Connector
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 2: NETWRIX AUDITOR -->
+      <div id="netwrix" class="grid lg:grid-cols-2 gap-12 items-center glass-card p-8 sm:p-12 rounded-3xl border border-slate-800 glow-purple">
+        <div class="order-2 lg:order-1 bg-slate-900 rounded-2xl p-6 border border-slate-800 font-mono text-xs text-slate-300">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4 text-slate-400">
+            <span>// Netwrix Audit Trail Snapshot</span>
+            <span class="text-purple-400">CHANGE TRACKING</span>
+          </div>
+          <div class="space-y-3">
+            <div class="p-3 rounded bg-slate-950 border border-purple-900/40">
+              <span class="text-purple-400">[AD CHANGE DETECTED]</span> Active Directory<br>
+              <span class="text-slate-400">Who:</span> admin_jdoe<br>
+              <span class="text-slate-400">What:</span> Added user to "Domain Admins"<br>
+              <span class="text-slate-400">Where:</span> DC-PRIMARY-01<br>
+              <span class="text-yellow-400">Before: 12 Members → After: 13 Members</span>
+            </div>
+            <div class="p-3 rounded bg-slate-950 border border-slate-800">
+              <span class="text-emerald-400">[FILE AUDIT]</span> Sensitive File Server<br>
+              <span class="text-slate-400">Action:</span> Mass Permissions Change Modified
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-950 border border-purple-700/50 text-purple-400 text-xs font-mono font-semibold mb-4">
+            NETWRIX AUDITOR
+          </div>
+          <h3 class="text-3xl font-bold text-white mb-4">Complete Audit Readiness & Change Intelligence</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Netwrix Auditor gives IT managers granular control over Active Directory, File Servers, Exchange, and Databases. Pass audits with zero stress and know exactly who changed what, when, and where.
+          </p>
+
+          <ul class="space-y-3 mb-8 text-sm text-slate-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-purple-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Granular "Before & After" Values:</strong> See exact modified attributes across AD, GPO, and files.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-purple-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Out-of-the-Box Compliance Reports:</strong> Built-in reports for PCI-DSS, HIPAA, ISO 27001, and NDPR.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-purple-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong>Agentless Architecture:</strong> Non-intrusive log collection without degrading server performance.</span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-4">
+            <button onclick="openModal('netwrix_quote')" class="px-6 py-3 rounded-lg bg-purple-500 text-slate-950 font-bold text-sm hover:bg-purple-400 transition-all">
+              Request Netwrix Quote
+            </button>
+            <button onclick="openModal('netwrix_demo')" class="px-6 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white font-semibold text-sm hover:bg-slate-800 transition-all">
+              Schedule Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE SECTION -->
+  <section id="comparison" class="py-20 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-extrabold text-white mb-4">Comparing Core Strengths</h2>
+        <p class="text-slate-400">Not sure which platform fits your current organizational focus? Here is how they align with your technical priorities.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm text-slate-300 border-collapse">
+          <thead>
+            <tr class="border-b border-slate-800 text-slate-400 text-xs font-mono uppercase">
+              <th class="py-4 px-6">Capability / Focus Area</th>
+              <th class="py-4 px-6 text-cyan-400">Microsoft Sentinel</th>
+              <th class="py-4 px-6 text-purple-400">Netwrix Auditor</th>
+            </th>
+          </thead>
+          <tbody class="divide-y divide-slate-800">
+            <tr>
+              <td class="py-4 px-6 font-semibold text-white">Primary Use Case</td>
+              <td class="py-4 px-6">Enterprise Threat Detection & Incident Response (SIEM/SOAR)</td>
+              <td class="py-4 px-6">Configuration Auditing, Data Security & Compliance Reporting</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-semibold text-white">Best Deployment Environment</td>
+              <td class="py-4 px-6">Cloud, Hybrid & Multi-Cloud Infrastructure</td>
+              <td class="py-4 px-6">On-Premises AD, Windows Servers & Hybrid Systems</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-semibold text-white">Audit Detail Depth</td>
+              <td class="py-4 px-6">Log Event Ingestion & Threat Correlations</td>
+              <td class="py-4 px-6">Deep "Before & After" Object Attribute Snapshots</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-semibold text-white">Compliance Reporting</td>
+              <td class="py-4 px-6">Custom Dashboards & KQL Queries</td>
+              <td class="py-4 px-6">Pre-built Compliance Templates (ISO, HIPAA, PCI, etc.)</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-semibold text-white">Automated Incident Response</td>
+              <td class="py-4 px-6">Advanced Playbooks (Logic Apps)</td>
+              <td class="py-4 px-6">Automated Response Scripts & Alerts</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-12 text-center p-8 rounded-2xl bg-slate-900 border border-slate-800 max-w-4xl mx-auto">
+        <h4 class="text-xl font-bold text-white mb-2">Need Both Working Together?</h4>
+        <p class="text-slate-400 text-sm mb-6">EG Integrated Services Ltd can configure Netwrix Auditor to pass rich pre-filtered AD audit telemetry straight into Microsoft Sentinel for unified monitoring.</p>
+        <button onclick="openModal('combined')" class="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-slate-950 font-bold text-sm hover:brightness-110 transition-all">
+          Discuss Dual-Product Strategy
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY EG INTEGRATED SERVICES -->
+  <section id="services" class="py-20 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Why Partner With EG Integrated Services Ltd?</h2>
+        <p class="text-slate-400">We don't just sell software licenses. We plan, architect, deploy, and maintain your cybersecurity infrastructure.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-2xl border border-slate-800">
+          <div class="w-12 h-12 rounded-xl bg-cyan-950 border border-cyan-800 flex items-center justify-center text-cyan-400 text-xl font-bold mb-6">1</div>
+          <h3 class="text-xl font-bold text-white mb-3">Certified Engineers</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Our deployment team carries official security certifications and enterprise implementation experience.</p>
+        </div>
+
+        <div class="glass-card p-8 rounded-2xl border border-slate-800">
+          <div class="w-12 h-12 rounded-xl bg-indigo-950 border border-indigo-800 flex items-center justify-center text-indigo-400 text-xl font-bold mb-6">2</div>
+          <h3 class="text-xl font-bold text-white mb-3">Custom Architecture</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">We tailor log ingestion parameters and audit configurations to optimize software licensing costs and server load.</p>
+        </div>
+
+        <div class="glass-card p-8 rounded-2xl border border-slate-800">
+          <div class="w-12 h-12 rounded-xl bg-purple-950 border border-purple-800 flex items-center justify-center text-purple-400 text-xl font-bold mb-6">3</div>
+          <h3 class="text-xl font-bold text-white mb-3">Ongoing Managed Support</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">From health checks to continuous rule tuning, EG Integrated Services stands as your trusted local cybersecurity advisory partner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / FOOTER FORM -->
+  <footer class="py-16 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Ready to Secure Your Enterprise Environment?</h2>
+      <p class="text-slate-400 mb-8 max-w-2xl mx-auto">Contact EG Integrated Services Ltd today to request licensing quotes, arrange technical walkthroughs, or evaluate product requirements.</p>
+      
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <button onclick="openModal('quote')" class="px-8 py-4 rounded-xl bg-cyan-500 text-slate-950 font-extrabold text-base hover:bg-cyan-400 transition-all">
+          Request Official Proposal
+        </button>
+        <button onclick="openModal('call')" class="px-8 py-4 rounded-xl bg-slate-950 border border-slate-700 text-white font-bold text-base hover:bg-slate-800 transition-all">
+          Call Security Specialist
+        </button>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-slate-800 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>© 2026 EG Integrated Services Ltd. All Rights Reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-400">Terms of Engagement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DIALOG -->
+  <div id="actionModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-card w-full max-w-lg p-8 rounded-3xl border border-slate-700 relative">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">✕</button>
+      
+      <h3 id="modalTitle" class="text-2xl font-bold text-white mb-2">Connect With Security Team</h3>
+      <p id="modalDesc" class="text-slate-400 text-sm mb-6">Fill out your contact details and an EG Integrated Services consultant will reach out immediately.</p>
+
+      <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Full Name</label>
+          <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Work Email</label>
+          <input type="email" required placeholder="j.doe@company.com" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Product of Interest</label>
+          <select id="productSelect" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-sm">
+            <option value="sentinel">Microsoft Sentinel (Cloud SIEM)</option>
+            <option value="netwrix">Netwrix Auditor (AD & File Auditing)</option>
+            <option value="both">Both / Solution Advisory</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Message / Requirements (Optional)</label>
+          <textarea rows="3" placeholder="Tell us about your organization size or timeline..." class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-sm"></textarea>
+        </div>
+        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-extrabold text-sm hover:brightness-110 shadow-lg transition-all">
+          Submit Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openModal(type) {
+      const modal = document.getElementById('actionModal');
+      const title = document.getElementById('modalTitle');
+      const select = document.getElementById('productSelect');
+
+      if(type.includes('sentinel')) {
+        title.innerText = 'Request Microsoft Sentinel Info';
+        select.value = 'sentinel';
+      } else if(type.includes('netwrix')) {
+        title.innerText = 'Request Netwrix Auditor Info';
+        select.value = 'netwrix';
+      } else {
+        title.innerText = 'Connect With EG Security Team';
+        select.value = 'both';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('actionModal').classList.add('hidden');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your request has been sent to EG Integrated Services Ltd. Our team will contact you shortly.');
+      closeModal();
+    }
+  </script>
+</body>
+</html>
